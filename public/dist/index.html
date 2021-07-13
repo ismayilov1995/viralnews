@@ -1,46 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="tailwind.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="tailwind.css" />
     <title>VIRALNEWS</title>
-</head>
-<body>
-<!-- Header -->
-<header>
-    <div class="container flex py-6 items-center">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container flex py-6 items-center">
         <h1 class="text-2xl flex-1">VIRALNEWS</h1>
         <ul class="flex text-xl gap-6">
-            <li><a class="font-medium" href="#"><i class="fa fa-cloud mr-4 text-blue-300"></i>21 Hava</a></li>
-            <li><a href="#"><i class="fa fa-search"></i></a></li>
+          <li>
+            <a class="font-medium" href="#"
+              ><i class="fa fa-cloud mr-4 text-blue-300"></i>21 Hava</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-search"></i></a>
+          </li>
         </ul>
-    </div>
-    <nav class="border-t border-b py-1">
+      </div>
+      <nav class="border-t border-b py-1">
         <div class="container flex gap-6 items-center">
-            <ul class="hidden lg:flex flex-1 justify-between gap-2 text-md font-medium">
-                <li class="cursor-pointer"><a href="#">Dünya</a></li>
-                <li class="cursor-pointer"><a href="#">İqtisadiyat</a></li>
-                <li class="cursor-pointer"><a href="#">İncəsənət</a></li>
-                <li class="cursor-pointer"><a href="#">İdman</a></li>
-                <li class="cursor-pointer"><a href="#">COVID-19</a></li>
-            </ul>
-            <div class="flex md:flex-1 justify-end">
-                <i class="text-xl fas fa-bars"></i>
-            </div>
+          <ul
+            class="
+              hidden
+              lg:flex
+              flex-1
+              justify-between
+              gap-2
+              text-md
+              font-medium
+            "
+          >
+            <li class="cursor-pointer"><a href="#">Dünya</a></li>
+            <li class="cursor-pointer"><a href="#">İqtisadiyat</a></li>
+            <li class="cursor-pointer"><a href="#">İncəsənət</a></li>
+            <li class="cursor-pointer"><a href="#">İdman</a></li>
+            <li class="cursor-pointer"><a href="#">COVID-19</a></li>
+          </ul>
+          <div class="flex md:flex-1 justify-end">
+            <i class="text-xl fas fa-bars"></i>
+          </div>
         </div>
-    </nav>
-    <div class="bg-red-600 py-2">
+      </nav>
+      <div class="bg-red-600 py-2">
         <div class="container text-white font-bold text-lg">
-            <i class="fa fa-bell mr-2"></i>
-            <a href="#">Son dəqiqə: Yabancı Turist Sayısı Hedefini Yakaladı Turizm Bakanlığı'nda Yüzler Gülüyor... <span class="font-light">-20:00</span></a>
+          <i class="fa fa-bell mr-2"></i>
+          <a href="#"
+            >Son dəqiqə: Yabancı Turist Sayısı Hedefini Yakaladı Turizm
+            Bakanlığı'nda Yüzler Gülüyor...
+            <span class="font-light">-20:00</span></a
+          >
         </div>
-    </div>
-</header>
-</body>
+      </div>
+    </header>
+    <main>
+      <!-- Latest news -->
+      <section class="container grid grid-cols-2 sm:grid-cols-4 gap-4 my-4">
+        <!-- News Card -->
+        <div class="font-medium text-base md:text-lg">
+          <a href="#">
+            <img src="images/economy/1.jpg" alt="Economy 1" />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui!
+          </a>
+        </div>
+        <div class="font-medium text-base md:text-lg">
+          <a href="#">
+            <img src="images/economy/1.jpg" alt="Economy 1" />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui!
+          </a>
+        </div>
+        <div class="font-medium text-base md:text-lg">
+          <a href="#">
+            <img src="images/economy/1.jpg" alt="Economy 1" />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui!
+          </a>
+        </div>
+        <div class="font-medium text-base md:text-lg">
+          <a href="#">
+            <img src="images/economy/1.jpg" alt="Economy 1" />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui!
+          </a>
+        </div>
+      </section>
+      <!-- Slider -->
+      <section class="container grid grid-cols-3 md:grid-cols-4 gap-4">
+          <div class="col-span-3 bg-gray-200 h-96">
+              <img class="object-cover w-full h-full" src="images/art/6.jpg" alt="Slider first">
+          </div>
+          <div class="w-full bg-gray-200 col-span-3 md:col-span-1">
+              <h4>Side news</h4>
+          </div>
+      </section>
+    </main>
+  </body>
 </html>

@@ -32200,6 +32200,24 @@ video {
   content: none;
 }
 
+.drop-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drop-menu-item:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+
+.drop-menu-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

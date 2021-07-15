@@ -38,7 +38,7 @@
           <ul
             class="
               hidden
-              lg:flex
+              md:flex
               flex-1
               justify-between
               gap-2
@@ -52,9 +52,54 @@
             <li class="cursor-pointer"><a href="#">İdman</a></li>
             <li class="cursor-pointer"><a href="#">COVID-19</a></li>
           </ul>
-          <div class="flex md:flex-1 justify-end">
-            <i class="text-xl fas fa-bars"></i>
+          <div class="relative md:hidden flex md:flex-1 justify-end">
+            <button id="menu-btn">
+              <i class="text-xl fas fa-bars"></i>
+            </button>
+            <div
+              id="menu-popup"
+              class="
+                hidden
+                absolute
+                top-6
+                left-0
+                bg-white
+                border
+                shadow-xl
+                rounded-md
+                z-50
+              "
+            >
+              <ul class="text-md w-60">
+                <li class="cursor-pointer border-b">
+                  <a class="drop-menu-item" href="#"
+                    >Dünya<i class="fa text-red-700 fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li class="cursor-pointer border-b">
+                  <a class="drop-menu-item" href="#"
+                    >İqtisadiyat<i class="fa text-red-700 fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li class="cursor-pointer border-b">
+                  <a class="drop-menu-item" href="#"
+                    >İncəsənət<i class="fa text-red-700 fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li class="cursor-pointer border-b">
+                  <a class="drop-menu-item" href="#"
+                    >İdman<i class="fa text-red-700 fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li class="cursor-pointer border-b">
+                  <a class="drop-menu-item" href="#"
+                    >COVID-19<i class="fa text-red-700 fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
+          <div class="hidden absolute top-0 left-0 popup-bg bg-yellow-300 w-full h-full">dsdsd</div>
         </div>
       </nav>
       <div class="bg-red-600 py-2">
@@ -311,5 +356,12 @@
       </div>
       <div class="spacer h-72"></div>
     </main>
+    <script src="./js/jquery.js"></script>
+    <script>
+      const popup = $("#menu-popup");
+      $("#menu-btn").click(function () {
+        popup.toggleClass("hidden");
+      });
+    </script>
   </body>
 </html>

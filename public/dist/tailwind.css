@@ -32218,6 +32218,21 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.side-card {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .side-card {
+    flex-direction: row;
+    border-bottom-width: 1px;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

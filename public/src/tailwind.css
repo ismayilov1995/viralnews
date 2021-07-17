@@ -5,3 +5,7 @@
 .drop-menu-item {
     @apply py-2 flex justify-between items-center px-4 hover:bg-gray-200;
 }
+
+.side-card {
+    @apply md:border-b flex flex-col md:flex-row pb-2 mb-2 gap-4;
+}

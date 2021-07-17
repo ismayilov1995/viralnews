@@ -52,7 +52,7 @@
             <li class="cursor-pointer"><a href="#">İdman</a></li>
             <li class="cursor-pointer"><a href="#">COVID-19</a></li>
           </ul>
-          <div class="relative md:hidden flex md:flex-1 justify-end">
+          <div class="relative flex md:hidden md:flex-1 justify-end">
             <button id="menu-btn">
               <i class="text-xl fas fa-bars"></i>
             </button>
@@ -67,6 +67,7 @@
                 border
                 shadow-xl
                 rounded-md
+                transition
                 z-50
               "
             >
@@ -357,11 +358,6 @@
       <div class="spacer h-72"></div>
     </main>
     <script src="./js/jquery.js"></script>
-    <script>
-      const popup = $("#menu-popup");
-      $("#menu-btn").click(function () {
-        popup.toggleClass("hidden");
-      });
-    </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

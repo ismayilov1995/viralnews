@@ -11,7 +11,8 @@ var breakingNews = [
   "M.Ferstappen: Mercedes əlçatmazdır",
 ];
 var counter = 0;
-var changingElement = document.getElementById("breaking-news").firstElementChild;
+var changingElement =
+  document.getElementById("breaking-news").firstElementChild;
 setInterval(changeIt, 3000);
 function changeIt() {
   changingElement.innerHTML = breakingNews[counter];
@@ -20,3 +21,20 @@ function changeIt() {
     counter = 0;
   }
 }
+
+const toupBtn = $("#toup");
+
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 100) {
+      toupBtn.fadeIn();
+    } else {
+      toupBtn.fadeOut();
+    }
+  });
+
+  toupBtn.click(function () {
+    $("html, body").animate({scrollTop: 0}, 700);
+    return false;
+  });
+});

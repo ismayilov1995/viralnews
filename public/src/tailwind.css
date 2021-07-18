@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.brand-text {
+    @apply text-2xl font-Poppins cursor-pointer;
+}
+
 .drop-menu-item {
-    @apply py-2 flex justify-between items-center px-4 hover:bg-gray-200;
+  @apply py-2 flex justify-between items-center px-4 hover:bg-gray-200;
 }
 
 .side-card {
-    @apply md:border-b flex flex-col md:flex-row pb-2 mb-2 gap-4;
+  @apply md:border-b flex flex-col md:flex-row pb-2 mb-2 gap-4;
 }
